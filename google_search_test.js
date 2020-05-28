@@ -20,7 +20,7 @@ var webdriver = require ('selenium-webdriver'),
 
     test.it('should append query to title', function() {
         driver.get('http://www.google.com');
-        driver.findElement(By.name('ghfgfhgfhgfq')).sendKeys('webdriver');
+        driver.findElement(By.name('gfhgfq')).sendKeys('webdriver');
         driver.findElement(By.name('btnG')).click();
         driver.wait(until.titleIs('webdriver - Поиск в Google'), 1000);
     });
