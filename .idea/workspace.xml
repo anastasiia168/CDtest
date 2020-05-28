@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6390b50f-5cd8-4540-8694-fb42b504ce53" name="Default Changelist" comment="" />
+    <list default="true" id="6390b50f-5cd8-4540-8694-fb42b504ce53" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +15,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cQ5Cqm6I0pVzYRXoUUnYwthkRV" />
   <component name="ProjectViewState">
@@ -59,6 +64,8 @@
       <option name="presentableId" value="Default" />
       <updated>1590447851021</updated>
       <workItem from="1590447852818" duration="10347000" />
+      <workItem from="1590709573318" duration="86000" />
+      <workItem from="1590709660233" duration="232000" />
     </task>
     <servers />
   </component>
@@ -70,10 +77,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="526" y="269" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590705283440" />
-    <state x="-1078" y="263" key="FileChooserDialogImpl" timestamp="1590709025277">
+    <state x="-1078" y="263" key="FileChooserDialogImpl" timestamp="1590709657154">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1078" y="263" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1590709025277" />
+    <state x="-1078" y="263" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1590709657154" />
     <state x="842" y="263" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590627835938" />
     <state width="1362" height="266" key="GridCell.Tab.0.bottom" timestamp="1590708060894">
       <screen x="0" y="0" width="1920" height="1040" />
