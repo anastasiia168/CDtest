@@ -1,28 +1,27 @@
+const BrowserFactory= require("./utils/browserFactory")
+global.browserName= "chrome";
+global.driver=BrowserFactory.create (browserName);
+const {By, until} = require ("selenium-webdriver");
 
 
 
-var webdriver = require('selenium-webdriver'),
-    chrome = require('selenium-webdriver/chrome');
 
-var options = new chrome.Options();
-options.addArguments(["start-maximized"]);
+    it
+    ("Login", function() {
 
-driver = new webdriver.Builder()
-    .forBrowser('chrome')
-    .setChromeOptions(options)
-    .build();
-
-    it('Login', function() {
-
-        driver.get("https://sagenda.net/");
+        driver.get("http://localhost/litecart/en/");
         driver.findElement(By.name('email')).sendKeys('naska121990@mail.ru');
         driver.findElement(By.name('password')).sendKeys('1111');
         driver.findElement(By.name('login')).click();
-        //driver.wait(until.titleIs('Account'), 10000);
     });
 
-    afterEach(function() {
-       driver.quit();
-       driver=null;
-    });
-
+   // afterEach(function() {
+    //   driver.quit();
+    //   driver=null;
+   // });
+    /*
+    driver.manage().addCookie({'name': "test", 'value':"test"});
+    var testCookie = driver.manage().getCookie("test");
+var cookies = driver.manage().getCookies();
+driver.manage().deleteCookie("test");
+driver.manage().deleteAllCookies(); */
