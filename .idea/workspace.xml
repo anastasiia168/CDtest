@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6390b50f-5cd8-4540-8694-fb42b504ce53" name="Default Changelist" comment="Zadanie 8 . Ne nahoditsya sticker otnositel'no utki.&#10;Zadanie">
-      <change afterPath="$PROJECT_DIR$/registration_Test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6390b50f-5cd8-4540-8694-fb42b504ce53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/shop_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop_test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +197,7 @@
       <workItem from="1591441098116" duration="5903000" />
       <workItem from="1591457679495" duration="27625000" />
       <workItem from="1591740371966" duration="23476000" />
-      <workItem from="1591831469664" duration="19015000" />
+      <workItem from="1591831469664" duration="19773000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1591222913041</created>
@@ -222,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591831910523</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Zadanie 8 . Ne nahoditsya sticker otnositel'no utki.&#10;Zadanie 11">
+      <created>1591884322574</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591884322574</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +248,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="." />
     <MESSAGE value="Zadanie 8 . Ne nahoditsya sticker otnositel'no utki." />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 8 . Ne nahoditsya sticker otnositel'no utki." />
+    <MESSAGE value="Zadanie 8 . Ne nahoditsya sticker otnositel'no utki.&#10;Zadanie 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 8 . Ne nahoditsya sticker otnositel'no utki.&#10;Zadanie 11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="601" y="210" key="#admin.js" timestamp="1591746572251">
@@ -265,10 +271,10 @@
     </state>
     <state x="-1197" y="176" key="#login_test.js/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591147935476" />
     <state x="723" y="176" key="#login_test.js/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591749765618" />
-    <state x="-1244" y="74" key="CommitChangelistDialog2" timestamp="1591879449414">
+    <state x="-1244" y="74" key="CommitChangelistDialog2" timestamp="1591884321565">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1244" y="74" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591879449414" />
+    <state x="-1244" y="74" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591884321565" />
     <state x="676" y="74" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591742077259" />
     <state x="-737" y="301" key="EnvironmentVariablesDialog" timestamp="1591657678934">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -279,28 +285,28 @@
     </state>
     <state x="-1078" y="263" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591881650898" />
     <state x="842" y="263" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590627835938" />
-    <state width="1837" height="250" key="GridCell.Tab.0.bottom" timestamp="1591884141913">
+    <state width="1837" height="250" key="GridCell.Tab.0.bottom" timestamp="1591884244617">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="250" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591884141913" />
+    <state width="1837" height="250" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591884244617" />
     <state width="1899" height="250" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591753828810" />
     <state width="1355" height="346" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="250" key="GridCell.Tab.0.center" timestamp="1591884141913">
+    <state width="1837" height="250" key="GridCell.Tab.0.center" timestamp="1591884244617">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="250" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591884141913" />
+    <state width="1837" height="250" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591884244617" />
     <state width="1899" height="250" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591753828810" />
     <state width="1355" height="346" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="250" key="GridCell.Tab.0.left" timestamp="1591884141913">
+    <state width="1837" height="250" key="GridCell.Tab.0.left" timestamp="1591884244617">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="250" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591884141913" />
+    <state width="1837" height="250" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591884244617" />
     <state width="1899" height="250" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591753828810" />
     <state width="1355" height="346" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="250" key="GridCell.Tab.0.right" timestamp="1591884141913">
+    <state width="1837" height="250" key="GridCell.Tab.0.right" timestamp="1591884244617">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="250" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591884141913" />
+    <state width="1837" height="250" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591884244617" />
     <state width="1899" height="250" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591753828810" />
     <state width="1355" height="346" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
     <state width="1837" height="321" key="GridCell.Tab.1.bottom" timestamp="1591882328606">
