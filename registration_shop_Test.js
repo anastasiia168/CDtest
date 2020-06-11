@@ -12,7 +12,6 @@ Keys = driver.Key,
         await  driver.get("https://litecart.stqa.ru/ru/");
         await  driver.findElement(By.css('#box-account-login > div > form > table > tbody > tr:nth-child(5) > td > a')).click();
         await driver.wait(until.elementLocated(By.name('firstname'),1000));
-
         await driver.sleep (1000);
         await  driver.findElement(By.name('tax_id')).sendKeys('1111');
         await driver.findElement(By.name('company')).sendKeys('ABS');
