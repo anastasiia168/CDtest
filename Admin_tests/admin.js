@@ -1,4 +1,4 @@
-const BrowserFactory= require("./utils/browserFactory")
+const BrowserFactory= require("../utils/browserFactory")
 global.browserName= "chrome";
 global.driver=BrowserFactory.create (browserName);
 //driver.manage().timeouts().implicitlyWait(10000);
