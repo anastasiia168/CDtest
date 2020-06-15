@@ -17,11 +17,13 @@ it ("create random email", async () => {
     it ("Registration", async () => {
         await  driver.get("https://litecart.stqa.ru/ru/");
         await  driver.findElement(By.css('#box-account-login > div > form > table > tbody > tr:nth-child(5) > td > a')).click();
-        await driver.wait(until.elementLocated(By.name('firstname'),2000));
+
         await driver.wait(until.elementLocated(By.name('tax_id'),2000));
         await driver.sleep (400);
         await driver.findElement(By.name('tax_id')).sendKeys('1111');
+        await driver.wait(until.elementLocated(By.name('company'),2000));
         await driver.findElement(By.name('company')).sendKeys('ABS');
+        await driver.wait(until.elementLocated(By.name('firstname'),2000));
         await driver.findElement(By.name('firstname')).sendKeys('Anna');
         await driver.findElement(By.name('lastname')).sendKeys('Ivanova');
         await driver.findElement(By.name('email')).sendKeys(emailRegistrationTest);
