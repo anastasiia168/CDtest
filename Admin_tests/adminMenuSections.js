@@ -6,7 +6,7 @@ const {By, until} = require ("selenium-webdriver");
 
 driver.get("http://localhost/litecart/admin/");
 
-describe ("Adminka",  () =>  {
+describe ("Admin menu sections",  () =>  {
 
     it ("OpenURL",async () =>  {
        await driver.get("http://localhost/litecart/admin/");
@@ -23,12 +23,43 @@ it ("Login", async () =>  {
 });
 
 
-/*
-
-it ("Appearence",  async () =>   {
+it ("Admin_menu_sections",  async () =>   {
     await driver.findElement(By.id("box-apps-menu-wrapper"));
 
+    var sections = await driver.findElements(By.css('#app-'));
+    console.log(sections.length);
+    console.log( await sections[3].getText());
+    for (var i = 0; i < sections.length; i++) {
+        var xpath = "/html/body/div/div/div/table/tbody/tr/td[1]/div[3]/ul/li["+(i+1) + "]/a";
+        await driver.wait(until.elementLocated(By.xpath(xpath),1000));
+        var section = await driver.findElement(By.xpath(xpath));
+        await section.click();
+
+        if("/html/body/div/div/div/table/tbody/tr/td[1]/div[3]/ul/li["+(i+1) + "]/ul)"
+
+            document.querySelector("#app- > ul")
+        var zonePage = await driver.findElements(By.css('#table-zones > tbody > tr> td:nth-child(3)'));
+        if (zonePage.length > 2) {
+            var zonesPage = await driver.findElements(By.css('#table-zones > tbody > tr> td:nth-child(3)'));
+            console.log(zonesPage.length);
+            console.log('startcopyarray');
+            var zonesForSort = zonesPage.slice();
+
+        var h1 = await driver.findElement(By.css(" #content > h1"));
+
+        hForPage = await h1.getText();
+        section = await sections[i].getText();
+        assert.ok(hForPage == section, 'not equal zones');
+
+    }
+});
+});
+/*
+    await driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
+
     await driver.wait(until.elementLocated(By.xpath('/html/body/div/div/div/table/tbody/tr/td[1]/div[3]/ul/li[1]/a/span'),1000));
+
+
     await driver.findElement(By.xpath('/html/body/div/div/div/table/tbody/tr/td[1]/div[3]/ul/li[1]/a/span')).click();
     await  driver.findElement(By.xpath("//h1[contains(text(), ' Template')]"));
 
@@ -38,9 +69,9 @@ it ("Appearence",  async () =>   {
     driver.findElement(By.xpath("//h1[contains(text(), ' Catalog')]"));
     ///html/body/div[1]/div/div/table/tbody/tr/td[1]/div[3]/ul/li[2]/ul/li[2]/a/span
 
-    console.log('1');//*[@id="app-"]/a/span[2]
-});
-*/
+    console.log('1');//*[@id="app-"]/a/span[2]*/
+
+/*
 
 it
 ("Appearence", async () => {
@@ -72,34 +103,4 @@ it
           subText = await subLink.getText();
           console.log (subText);
       }
-  }
-
-     */
-});
-
-  /*/  driver.wait(until.elementLocated(By.css('#app-'), 10000));
-  //  driver.findElement(By.css('#app-')).click();
-
-    var links = driver.findElements(By.css("li"));
-    for (let link of links)
-    {
-        text = link.getText();
-        console.log (text);
-    }
-  //  driver.findElement(By.xpath('/html/body/div[1]/div/div/table/tbody/tr/td[1]/div[3]/ul/li[1]/ul/li[1]/a/span')).click();
-
-/*var form1 = driver.findElement(By.id("login-form"));
-var form2 = driver.findElement(By.tagName("form"));
-var form3 = driver.findElement(By.className("login"));
-var form4 = driver.findElement(By.css("form.login"));
-var form5 = driver.findElement(By.css("#login-form"));
-
-var field1 = driver.findElement(By.name("username"));
-var field2 = driver.findElement(By.xpath("//input[@name='username']"));
-var link = driver.findElement(By.linkText("Logout"));
-var links = driver.findElements(By.tagName("a"));// настройка неявных ожиданий
-driver.manage().timeouts().implicitlyWait(10000/* ms* /);
-var element = driver.findElement(By.name("q"));
-// явное ожидание появления элемента
-*/
-});
+  }*/
