@@ -1,11 +1,9 @@
 const BrowserFactory= require("../utils/browserFactory")
 global.browserName= "chrome";
 global.driver=BrowserFactory.create (browserName);
-//driver.manage().timeouts().implicitlyWait(10000);
 const {By, until} = require ("selenium-webdriver");
 const assert= require("assert");
 
-driver.get("http://localhost/litecart/admin/");
 
 describe ("Countries and Zones sort ",  () =>  {
 
@@ -39,7 +37,7 @@ describe ("Countries and Zones sort ",  () =>  {
 
     it ("Zones",  async () =>   {
         await driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
-        var countZones = await driver.findElements(By.css('#content > form > table > tbody > tr > td:nth-child(6)'));
+        var countZones = await driver.findElements(By.css('#content > form > table > tbody > tr:nth-child(2) > td:nth-child(4)'));
         for(var i = 0; i<countZones.length; i++)
         {
             countZones = await driver.findElements(By.css('#content > form > table > tbody > tr > td:nth-child(6)'));
@@ -47,7 +45,7 @@ describe ("Countries and Zones sort ",  () =>  {
             Zone = await countZones[i].getAttribute("textContent");
             if (Zone != "0") {
 
-                var css = "#content > form > table > tbody > tr:nth-child(" + (i+2) + ") > td:nth-child(5) > a";
+                var css = "#content > form > table > tbody > (" + (i+2) + ") > td:nth-child(3) > a";
                 console.log(css);
                 var countryWithZones = await driver.findElement(By.css(css));
                 await countryWithZones.click();

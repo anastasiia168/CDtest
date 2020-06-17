@@ -20,7 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6390b50f-5cd8-4540-8694-fb42b504ce53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/registration_shop_Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/registration_shop_Test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Litecart_tests/Cart_test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin_tests/adminMenuSections.js" beforeDir="false" afterPath="$PROJECT_DIR$/Admin_tests/adminMenuSections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin_tests/countrysSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/Admin_tests/countrysSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin_tests/zonesSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/Admin_tests/zonesSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration_shop_Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/Litecart_tests/registration_shop_Test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickers_shop_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/Litecart_tests/stickers_shop_test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,24 +52,28 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.10.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Litecart_tests/stickers_shop_test.js" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Documents\aututests\test-repository-ST\Litecart_tests" />
+      <recent name="C:\Users\admin\Documents\aututests\test-repository-ST\Admin_tests" />
+      <recent name="C:\Users\admin\Documents\aututests\test-repository-ST\Admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\Documents\aututests\test-repository-ST\utils" />
       <recent name="C:\Users\admin\Documents\aututests\test-repository-ST\Admin_tests" />
       <recent name="C:\Users\admin\Documents\aututests\test-repository-ST" />
       <recent name="C:\Users\admin\WebstormProjects\untitled1" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\Documents\aututests\test-repository-ST\Admin_tests" />
-      <recent name="C:\Users\admin\Documents\aututests\test-repository-ST\Admin" />
-    </key>
   </component>
-  <component name="RunManager" selected="Mocha.registration_shop_Test.js">
+  <component name="RunManager" selected="Mocha.Admin_tests\adminMenuSections.js">
+    <configuration name="registration_shop_Test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Litecart_tests/registration_shop_Test.js" working-dir="$PROJECT_DIR$/Litecart_tests">
+      <method v="2" />
+    </configuration>
     <configuration name="Add New Product" type="mocha-javascript-test-runner" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -79,20 +89,32 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Add New Product.Login" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="Admin menu sections.Admin_menu_sections" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
       <ui>bdd</ui>
-      <extra-mocha-options>--timeout 20000</extra-mocha-options>
+      <extra-mocha-options />
       <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/Admin_tests/AddNewProduct.js</test-file>
+      <test-file>$PROJECT_DIR$/Admin_tests/adminMenuSections.js</test-file>
       <test-names>
-        <name value="Add New Product" />
-        <name value="Login" />
+        <name value="Admin menu sections" />
+        <name value="Admin_menu_sections" />
       </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Admin_tests\addNewProduct.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--timeout 10000</extra-mocha-options>
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/Admin_tests/addNewProduct.js</test-file>
       <method v="2" />
     </configuration>
     <configuration name="Admin_tests\adminMenuSections.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
@@ -102,48 +124,21 @@
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
       <ui>bdd</ui>
-      <extra-mocha-options>--timeout 20000</extra-mocha-options>
+      <extra-mocha-options>--timeout 90000</extra-mocha-options>
       <test-kind>TEST_FILE</test-kind>
       <test-file>$PROJECT_DIR$/Admin_tests/adminMenuSections.js</test-file>
       <method v="2" />
     </configuration>
-    <configuration name="Admin_tests\countrysSort.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="Litecart_tests\Cart_test.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
       <ui>bdd</ui>
-      <extra-mocha-options>--timeout 50000</extra-mocha-options>
+      <extra-mocha-options>--timeout 10000</extra-mocha-options>
       <test-kind>TEST_FILE</test-kind>
-      <test-file>$PROJECT_DIR$/Admin_tests/countrysSort.js</test-file>
-      <method v="2" />
-    </configuration>
-    <configuration name="LoginLogout" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/registration_shop_Test.js</test-file>
-      <test-names>
-        <name value="LoginLogout" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="registration_shop_Test.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options>--timeout 20000</extra-mocha-options>
-      <test-kind>TEST_FILE</test-kind>
-      <test-file>$PROJECT_DIR$/registration_shop_Test.js</test-file>
+      <test-file>$PROJECT_DIR$/Litecart_tests/Cart_test.js</test-file>
       <method v="2" />
     </configuration>
     <configuration name="shop_test.js" type="mocha-javascript-test-runner">
@@ -161,19 +156,19 @@
     <list>
       <item itemvalue="Mocha.Add New Product" />
       <item itemvalue="Mocha.shop_test.js" />
-      <item itemvalue="Mocha.Add New Product.Login" />
-      <item itemvalue="Mocha.Admin_tests\countrysSort.js" />
+      <item itemvalue="Mocha.Admin_tests\addNewProduct.js" />
+      <item itemvalue="Mocha.Litecart_tests\Cart_test.js" />
       <item itemvalue="Mocha.Admin_tests\adminMenuSections.js" />
-      <item itemvalue="Mocha.registration_shop_Test.js" />
-      <item itemvalue="Mocha.LoginLogout" />
+      <item itemvalue="Mocha.Admin menu sections.Admin_menu_sections" />
+      <item itemvalue="Node.js.registration_shop_Test.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Mocha.registration_shop_Test.js" />
-        <item itemvalue="Mocha.LoginLogout" />
         <item itemvalue="Mocha.Admin_tests\adminMenuSections.js" />
-        <item itemvalue="Mocha.Add New Product.Login" />
-        <item itemvalue="Mocha.Admin_tests\countrysSort.js" />
+        <item itemvalue="Mocha.Admin menu sections.Admin_menu_sections" />
+        <item itemvalue="Mocha.Admin_tests\addNewProduct.js" />
+        <item itemvalue="Node.js.registration_shop_Test.js" />
+        <item itemvalue="Mocha.Litecart_tests\Cart_test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +198,11 @@
       <workItem from="1591740371966" duration="23476000" />
       <workItem from="1591831469664" duration="39877000" />
       <workItem from="1592004503440" duration="52877000" />
-      <workItem from="1592175508149" duration="3712000" />
+      <workItem from="1592175508149" duration="49340000" />
+      <workItem from="1592308525995" duration="3083000" />
+      <workItem from="1592323757381" duration="383000" />
+      <workItem from="1592353282918" duration="119000" />
+      <workItem from="1592353453509" duration="23103000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1591222913041</created>
@@ -268,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592180190582</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Zadanie 11">
+      <created>1592180515808</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1592180515808</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,18 +298,23 @@
     <MESSAGE value="Zadanie 8 . Ne nahoditsya sticker otnositel'no utki.&#10;Zadanie 11" />
     <MESSAGE value="Zadanie 8 stickers_shop_test.js . Ne nahoditsya sticker otnositel'no utki.&#10;Zadanie 11 registration_shop_Test.js" />
     <MESSAGE value="Zadanie 9 countrysSort.js zonesSort.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 9 countrysSort.js zonesSort.js" />
+    <MESSAGE value="Zadanie 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 11" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1365" y="218" key="#Inspections" timestamp="1592314395554">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1365" y="218" key="#Inspections/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592314395554" />
     <state x="601" y="210" key="#admin.js" timestamp="1591746572251">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1319" y="210" key="#admin.js/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591662217715" />
     <state x="601" y="210" key="#admin.js/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591746572251" />
-    <state x="-1150" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592163766499">
+    <state x="-1150" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592433972220">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1150" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592163766499" />
+    <state x="-1150" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592433972220" />
     <state x="526" y="269" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591749729073" />
     <state x="-1197" y="176" key="#google_search_test.js" timestamp="1591147916846">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -314,120 +325,124 @@
     </state>
     <state x="-1197" y="176" key="#login_test.js/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591147935476" />
     <state x="723" y="176" key="#login_test.js/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591749765618" />
-    <state x="-1244" y="74" key="CommitChangelistDialog2" timestamp="1592180189382">
+    <state x="-1319" y="210" key="#stickers_shop_test.js" timestamp="1592252638524">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1244" y="74" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592180189382" />
+    <state x="-1319" y="210" key="#stickers_shop_test.js/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592252638524" />
+    <state x="-1244" y="74" key="CommitChangelistDialog2" timestamp="1592180515082">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1244" y="74" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592180515082" />
     <state x="676" y="74" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591742077259" />
     <state x="-737" y="301" key="EnvironmentVariablesDialog" timestamp="1591657678934">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-737" y="301" key="EnvironmentVariablesDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591657678934" />
-    <state x="-1078" y="263" key="FileChooserDialogImpl" timestamp="1591881650898">
+    <state x="-1078" y="263" key="FileChooserDialogImpl" timestamp="1592252697794">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1078" y="263" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591881650898" />
+    <state x="-1078" y="263" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592252697794" />
     <state x="842" y="263" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590627835938" />
-    <state width="1837" height="233" key="GridCell.Tab.0.bottom" timestamp="1592180469240">
+    <state width="1619" height="241" key="GridCell.Tab.0.bottom" timestamp="1592434507897">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="233" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592180469240" />
+    <state width="1619" height="241" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592434507897" />
     <state width="1899" height="250" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591753828810" />
     <state width="1355" height="346" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="233" key="GridCell.Tab.0.center" timestamp="1592180469239">
+    <state width="1619" height="241" key="GridCell.Tab.0.center" timestamp="1592434507897">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="233" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592180469239" />
+    <state width="1619" height="241" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592434507897" />
     <state width="1899" height="250" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591753828810" />
     <state width="1355" height="346" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="233" key="GridCell.Tab.0.left" timestamp="1592180469239">
+    <state width="1619" height="241" key="GridCell.Tab.0.left" timestamp="1592434507896">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="233" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592180469239" />
+    <state width="1619" height="241" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592434507896" />
     <state width="1899" height="250" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591753828810" />
     <state width="1355" height="346" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="233" key="GridCell.Tab.0.right" timestamp="1592180469240">
+    <state width="1619" height="241" key="GridCell.Tab.0.right" timestamp="1592434507897">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="233" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592180469240" />
+    <state width="1619" height="241" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592434507897" />
     <state width="1899" height="250" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591753828810" />
     <state width="1355" height="346" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="321" key="GridCell.Tab.1.bottom" timestamp="1592131627555">
+    <state width="1305" height="321" key="GridCell.Tab.1.bottom" timestamp="1592388442057">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="321" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592131627555" />
+    <state width="1305" height="321" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592388442057" />
     <state width="968" height="325" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432392" />
     <state width="1355" height="346" key="GridCell.Tab.1.bottom/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="321" key="GridCell.Tab.1.center" timestamp="1592131627555">
+    <state width="1305" height="321" key="GridCell.Tab.1.center" timestamp="1592388442057">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="321" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592131627555" />
+    <state width="1305" height="321" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592388442057" />
     <state width="968" height="325" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432392" />
     <state width="1355" height="346" key="GridCell.Tab.1.center/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="321" key="GridCell.Tab.1.left" timestamp="1592131627555">
+    <state width="1305" height="321" key="GridCell.Tab.1.left" timestamp="1592388442056">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="321" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592131627555" />
+    <state width="1305" height="321" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592388442056" />
     <state width="968" height="325" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432392" />
     <state width="1355" height="346" key="GridCell.Tab.1.left/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="321" key="GridCell.Tab.1.right" timestamp="1592131627555">
+    <state width="1305" height="321" key="GridCell.Tab.1.right" timestamp="1592388442057">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="321" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592131627555" />
+    <state width="1305" height="321" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592388442057" />
     <state width="968" height="325" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432392" />
     <state width="1355" height="346" key="GridCell.Tab.1.right/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="321" key="GridCell.Tab.2.bottom" timestamp="1592131627556">
+    <state width="1305" height="321" key="GridCell.Tab.2.bottom" timestamp="1592388442057">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="321" key="GridCell.Tab.2.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592131627556" />
+    <state width="1305" height="321" key="GridCell.Tab.2.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592388442057" />
     <state width="968" height="325" key="GridCell.Tab.2.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432393" />
     <state width="1355" height="346" key="GridCell.Tab.2.bottom/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="321" key="GridCell.Tab.2.center" timestamp="1592131627556">
+    <state width="1305" height="321" key="GridCell.Tab.2.center" timestamp="1592388442057">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="321" key="GridCell.Tab.2.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592131627556" />
+    <state width="1305" height="321" key="GridCell.Tab.2.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592388442057" />
     <state width="968" height="325" key="GridCell.Tab.2.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432392" />
     <state width="1355" height="346" key="GridCell.Tab.2.center/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="321" key="GridCell.Tab.2.left" timestamp="1592131627555">
+    <state width="1305" height="321" key="GridCell.Tab.2.left" timestamp="1592388442057">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="321" key="GridCell.Tab.2.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592131627555" />
+    <state width="1305" height="321" key="GridCell.Tab.2.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592388442057" />
     <state width="968" height="325" key="GridCell.Tab.2.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432392" />
     <state width="1355" height="346" key="GridCell.Tab.2.left/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="321" key="GridCell.Tab.2.right" timestamp="1592131627556">
+    <state width="1305" height="321" key="GridCell.Tab.2.right" timestamp="1592388442057">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="321" key="GridCell.Tab.2.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592131627556" />
+    <state width="1305" height="321" key="GridCell.Tab.2.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592388442057" />
     <state width="968" height="325" key="GridCell.Tab.2.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432393" />
     <state width="1355" height="346" key="GridCell.Tab.2.right/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="321" key="GridCell.Tab.3.bottom" timestamp="1592131627556">
+    <state width="1305" height="321" key="GridCell.Tab.3.bottom" timestamp="1592388442057">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="321" key="GridCell.Tab.3.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592131627556" />
+    <state width="1305" height="321" key="GridCell.Tab.3.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592388442057" />
     <state width="968" height="325" key="GridCell.Tab.3.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432393" />
     <state width="1355" height="346" key="GridCell.Tab.3.bottom/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="321" key="GridCell.Tab.3.center" timestamp="1592131627556">
+    <state width="1305" height="321" key="GridCell.Tab.3.center" timestamp="1592388442057">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="321" key="GridCell.Tab.3.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592131627556" />
+    <state width="1305" height="321" key="GridCell.Tab.3.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592388442057" />
     <state width="968" height="325" key="GridCell.Tab.3.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432393" />
     <state width="1355" height="346" key="GridCell.Tab.3.center/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="321" key="GridCell.Tab.3.left" timestamp="1592131627556">
+    <state width="1305" height="321" key="GridCell.Tab.3.left" timestamp="1592388442057">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="321" key="GridCell.Tab.3.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592131627556" />
+    <state width="1305" height="321" key="GridCell.Tab.3.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592388442057" />
     <state width="968" height="325" key="GridCell.Tab.3.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432393" />
     <state width="1355" height="346" key="GridCell.Tab.3.left/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1837" height="321" key="GridCell.Tab.3.right" timestamp="1592131627556">
+    <state width="1305" height="321" key="GridCell.Tab.3.right" timestamp="1592388442057">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1837" height="321" key="GridCell.Tab.3.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592131627556" />
+    <state width="1305" height="321" key="GridCell.Tab.3.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592388442057" />
     <state width="968" height="325" key="GridCell.Tab.3.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432393" />
     <state width="1355" height="346" key="GridCell.Tab.3.right/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state x="-1399" y="272" key="Vcs.Push.Dialog.v2" timestamp="1592180194141">
+    <state x="-1399" y="272" key="Vcs.Push.Dialog.v2" timestamp="1592180519665">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1399" y="272" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592180194141" />
+    <state x="-1399" y="272" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592180519665" />
     <state x="-1060" y="419" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591222879881">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -444,18 +459,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Admin_tests/adminMenuSections.js</url>
-          <line>51</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/registration_shop_Test.js</url>
-          <line>49</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="javascript-exception" />
       </default-breakpoints>

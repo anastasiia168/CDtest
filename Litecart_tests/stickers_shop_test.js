@@ -1,13 +1,12 @@
-const BrowserFactory= require("./utils/browserFactory")
+const BrowserFactory= require("../utils/browserFactory")
 const {Key} = require("selenium-webdriver");
 global.browserName= "chrome";
 global.driver=BrowserFactory.create (browserName);
-const emailRegistrationTest= "avstest9211000@mail.ru";
-const passwordRegistrationTest= "11711";
+
 const {By, until} = require ("selenium-webdriver");
 Keys = driver.Key,
-//driver.manage().timeouts().implicitlyWait(10000);- из примера в СДО  -  TypeError: driver.manage(...).timeouts is not a function
-
+driver.get("http://localhost/litecart/admin/");
+driver.manage().setTimeouts( { implicit: 5000 } );
     it
     ("Login", async () => {
 
