@@ -41,7 +41,7 @@ describe ("Zones Sort",  () => {
 
             for (var item of  zones){
                 {
-                   // selectedValue = (new selectElement(item)).selectedOptions.getText();
+                    selectedValue = (new selectElement(item)).selectedOptions.getText();
                     countries.add(selectedValue);
                     countriesForSort.add(selectedValue);
                 }
