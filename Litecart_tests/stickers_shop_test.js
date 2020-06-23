@@ -7,7 +7,7 @@ const {By, until} = require ("selenium-webdriver");
 Keys = driver.Key,
 driver.get("http://localhost/litecart/admin/");
 const assert= require("assert");
-driver.manage().setTimeouts( { implicit: 1000 } );
+driver.manage().setTimeouts( { implicit: 4000 } );
     it
     ("Login", async () => {
 
