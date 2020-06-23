@@ -22,14 +22,9 @@ driver.manage().setTimeouts( { implicit: 4000 } );
     console.log(ducks.length);
     for(var item of ducks)
     {
-        var stickers = await item.findElements(By.css("a.link>div.image-wrapper>div.sticker")).count;
-        //var stickerCount =await item.findElements(By.css("a.link>div.image-wrapper>div.sticker")).count;
-        driver.sleep(3000);
-        console.log(stickers);
-        driver.sleep(3000);
-       // var isStickerPresent = await elementIsVisible(By.css("a.link>div.image-wrapper>div.sticker"), item);
-     //   assert.ok(isStickerPresent=true, 'not true');
-        assert.ok( stickers == 1, 'not 1');
+        var stickers = await item.findElements(By.css("a.link>div.image-wrapper>div.sticker"));
+        console.log(stickers.length);
+        assert.ok( stickers.length == 1, 'not 1');
     }
 
     });
