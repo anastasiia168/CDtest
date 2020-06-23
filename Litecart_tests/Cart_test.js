@@ -4,64 +4,55 @@ global.browserName= "chrome";
 global.driver=BrowserFactory.create (browserName);
 global.assert= require("assert");
 const {By, until} = require ("selenium-webdriver");
-    Keys = driver.Key,
-    driver.get("http://localhost/litecart/admin/");
-driver.manage().setTimeouts( { implicit: 5000 } );
-
-    it ("Open main page", async () => {
-        await  driver.get("https://litecart.stqa.ru/ru/");
-        await driver.wait(until.elementLocated(By.css('#box-most-popular > div > ul > li:nth-child(1)'),2000));
-    });
-it ("Add first product to cart", async () => {
-    console.log('stranica');
-     await  driver.findElement(By.css('#box-most-popular > div > ul > li:nth-child(1)')).click();
-    console.log('pervyi product');
-    await driver.wait(until.elementLocated(By.name('add_cart_product'),2000));
-    await  driver.findElement(By.name('add_cart_product')).click();
-    console.log('add1');
-});
-it ("Number of products in the cart updated", async () => {
-
-});
-it ("Repeat two times", async () => {
-    await  driver.findElement(By.css('#site-menu > ul > li.general-0 > a')).click();
-    console.log('HomePage');
-    await driver.sleep(1000);
-    await driver.wait(until.elementLocated(By.css('#box-most-popular > div > ul > li:nth-child(1)'),2000));
-
-    await driver.sleep(1000);
-    await  driver.findElement(By.name('add_cart_product')).click();
-    console.log('add2');
-    await driver.sleep(1000);
-    console.log('HomePage');
-    await  driver.findElement(By.css('#site-menu > ul > li.general-0 > a')).click();
-
-    await driver.sleep(1000);
-    await driver.wait(until.elementLocated(By.css('#box-most-popular > div > ul > li:nth-child(1)'),2000));
-
-    await driver.sleep(1000);
-    await  driver.findElement(By.name('add_cart_product')).click();
-    console.log('add3');
+Keys = driver.Key,
+driver.get("https://litecart.stqa.ru/en/");
+driver.manage().setTimeouts( { implicit: 100 } );
 
 
+
+it ("Add products to cart", async () => {
+
+    for (var i = 0; i < 3; i++) {
+        await driver.get("https://litecart.stqa.ru/en/");
+        await driver.wait(until.elementLocated(By.css('#box-most-popular > div > ul > li:nth-child(1)')), 2000);
+        await driver.findElement(By.css('#box-most-popular > div > ul > li:nth-child(1)')).click();
+
+        var bigDucks = await driver.findElements(By.name('options[Size]'));
+        if (bigDucks.length == 1){
+            await driver.findElement(By.name('options[Size]')).click();
+            await driver.findElement(By.css('#box-product > div.content > div.information > div.buy_now > form > table > tbody > tr:nth-child(1) > td > select > option:nth-child(3)')).click();
+        }
+        await driver.wait(until.elementLocated(By.css('#cart > a.content > span.quantity')), 2000);
+        var count = await driver.findElement(By.css('#cart > a.content > span.quantity'));
+        await driver.findElement(By.name('add_cart_product')).click();
+        var countnew = driver.findElement(By.css('#cart > a.content > span.quantity'));
+        await driver.sleep(1000);
+        assert.ok(count != countnew, 'not equal items');
+    }
 });
 
 it (" Open the cart Checkout", async () => {
-   // await driver.findElement(By.css('#cart > a.link')).click();
-  //  await driver.wait(until.elementLocated(By.name( 'remove_cart_item'),2000));
+   await driver.findElement(By.css('#cart > a.link')).click();
+   await driver.wait(until.elementLocated(By.name( 'remove_cart_item')),2000);
 });
 it (" Delete all products", async () => {
-//6) удалить все товары из корзины один за другим, после каждого удаления подождать, пока внизу обновится таблица
+    var products = await driver.findElements(By.css(".dataTable.rounded-corners tr > td.item"));
+
+    for (var item of products){
+        var removeButtons = await driver.findElements(By.name('remove_cart_item'));
+        await console.log("deleted buttons = " + removeButtons.length);
+        if (removeButtons.length >= 0){
+            await driver
+                .wait(function () {
+                    return until.elementIsVisible(removeButtons[0]);
+                    }, 3000)
+                 .then(async function() {
+                     await removeButtons[0].click();
+                     await driver.sleep(100);
+                 });
+        }
+        await driver.wait(until.stalenessOf(item),6000);
+    }
+   await driver.wait(until.elementLocated(By.css('#checkout-cart-wrapper > p:nth-child(2) > a')), 2000);
+   await driver.findElement(By.css('#checkout-cart-wrapper > p:nth-child(2) > a')).click();
 });
-
-
-
-
-
-
-
-
-
-
-
-

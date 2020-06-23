@@ -6,7 +6,8 @@ global.driver=BrowserFactory.create (browserName);
 const {By, until} = require ("selenium-webdriver");
 Keys = driver.Key,
 driver.get("http://localhost/litecart/admin/");
-driver.manage().setTimeouts( { implicit: 5000 } );
+const assert= require("assert");
+driver.manage().setTimeouts( { implicit: 1000 } );
     it
     ("Login", async () => {
 
@@ -19,28 +20,20 @@ driver.manage().setTimeouts( { implicit: 5000 } );
     });
  it
 ("DucksStikers", async () => {
-    await driver.findElements(By.css("li.product"))
-       .then(
-           async function(ducks){
-               console.log("bili naideni utki");
-               console.log(ducks.length);
-
-              for (let i = 0; i < ducks.length; i++)
-               {
-                  console.log(ducks[i].getId());
-
-                   await driver.findElements(By.css("div.sticker")).then(
-                       //если вместо driver  поставить ducks[i] , элемент не находится. Подскажите пожалуйста почему.
-                        function (stickers) {
-                           console.log("bili naideni utki stickery");
-                           console.log(stickers.length);
-                           //так же не понятно как проверить наличие только одного стикера в СДО для JS  нет понятного примера
-                       }
-                   );
-               }
-           });
-});
 
 
+        var ducks = await driver.findElements(By.className("product column shadow hover-light"));
+    console.log(ducks.length);
+    for(var item of ducks)
+    {
+        var stickerCount =await item.findElements(By.css("a.link>div.image-wrapper>div.sticker")).count;
+        driver.sleep(3000);
+        console.log(stickerCount);
+        driver.sleep(3000);
+       // var isStickerPresent = await elementIsVisible(By.css("a.link>div.image-wrapper>div.sticker"), item);
+     //   assert.ok(isStickerPresent=true, 'not true');
+        assert.ok( stickerCount == 1, 'not 1');
+    }
 
+    });
 

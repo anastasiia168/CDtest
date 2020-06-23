@@ -4,6 +4,7 @@ global.driver=BrowserFactory.create (browserName);
 //driver.manage().timeouts().implicitlyWait(10000);
 const {By, until} = require ("selenium-webdriver");
 const assert= require("assert");
+driver.manage().setTimeouts( { implicit: 4000 } );
 
 driver.get("http://localhost/litecart/admin/");
 
@@ -26,33 +27,35 @@ describe ("Zones Sort",  () => {
         await driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
         console.log('start');
         var countries = await driver.findElements(By.css('#content > form > table > tbody > tr> td:nth-child(3) > a'));
-        console.log('1');
+        console.log('countries.length=' + countries.length);
         for (var i = 0; i < countries.length; i++) {
             console.log('2');
+
+
             var css = "#content > form > table > tbody > tr:nth-child(" + (i+2) + ") >td:nth-child(3)> a";
-            await driver.wait(until.elementLocated(By.css(css),1000));
+            await driver.wait(until.elementLocated(By.css(css)),1000);
             var country = await driver.findElement(By.css(css));
             await country.click();
             console.log('3');
-            await driver.wait(until.elementLocated(By.name("zones[1][zone_code]"),1000));
+            zones= await driver.findElements(By.css("#table-zones > tbody > tr> td:nth-child(3) > select"));
 
-          //  var zonePage = await driver.findElements(By.css('#table-zones > tbody > tr> td:nth-child(3)'));
-          //  if (zonePage.length > 2) {
-              //  var zonesPage = await driver.findElements(By.css('#table-zones > tbody > tr> td:nth-child(3)'));
-             //   console.log(zonesPage.length);
-             //   console.log('startcopyarray');
-            //    var zonesForSort = zonesPage.slice();
-            //    var zonesSort = zonesForSort.sort();
-            //    for (var j = 0; j < zonesPage.length; j++) {
-            //       console.log( await zonesSort[j].getText());
-             //       sortzone = await zonesSort[j].getText();
-             //       zone = await zonesPage[j].getText();
-              //      assert.ok(sortzone == zone, 'not equal zones');
-               // }
-          // }
-           // await driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
+            for (var item of  zones){
+                {
+                   // selectedValue = (new selectElement(item)).selectedOptions.getText();
+                    countries.add(selectedValue);
+                    countriesForSort.add(selectedValue);
+                }
+
+            console.log('startcopyarray');
+            var countriesSort = countriesForSort.sort();
+            for (var j = 0; j < zones.length; j++)
+            {
+
+                assert.ok(countriesSort == countries, 'not equal zones');
+            }
+            }
         }
+        await driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
         console.log('end');
     });
 });
-

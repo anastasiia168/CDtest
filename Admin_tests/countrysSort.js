@@ -19,7 +19,7 @@ describe ("Countries and Zones sort ",  () =>  {
      await driver.findElement(By.name('login')).click();
      await driver.wait(until.elementLocated(By.id("box-apps-menu-wrapper"),10000));
     });
-
+   // #table-zones > tbody > tr:nth-child(3) > td:nth-child(3) > select > option:nth-child(3)
     it ("Sort Check",  async () =>   {
          await driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
          var countries = await driver.findElements(By.css('#content > form > table > tbody > tr > td:nth-child(5) > a'));

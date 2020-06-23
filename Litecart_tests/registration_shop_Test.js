@@ -48,11 +48,11 @@ it ("Enter fields", async () => {
     await driver.findElement(By.name('address1')).sendKeys('520 S Michigan Ave');
 });
          it ("Create_account", async () => {
-        await driver.wait(until.elementLocated(By.name('create_account'),1000));
+        await driver.wait(until.elementLocated(By.name('create_account')),1000);
         await driver.findElement(By.name('create_account')).click();
          });
        it ("LogOutAfterRegister", async () => {
-        await driver.wait(until.elementLocated(By.linkText('Logout'),1000));
+        await driver.wait(until.elementLocated(By.linkText('Logout')),1000);
         await driver.findElement(By.linkText("Logout")).click();
         console.log("logout");
         });

@@ -11,3 +11,10 @@
 [0609/031938.376:ERROR:process_reader_win.cc(123)] NtOpenThread: {???????? ? ???????} ??????? ???????? ?????? ? ???????, ?? ????? ?? ?????? ?? ?????????????. (0xc0000022)
 [0609/031938.382:ERROR:exception_snapshot_win.cc(98)] thread ID 9288 not found in process
 [0612/094210.972:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0620/033833.703:ERROR:process_info.cc(359)] UncheckedAllocate
+[0620/034154.058:ERROR:process_info.cc(359)] UncheckedAllocate
+[0620/042853.155:ERROR:process_info.cc(359)] UncheckedAllocate
+[0620/042853.328:ERROR:process_info.cc(359)] UncheckedAllocate
+[0620/042912.494:ERROR:process_info.cc(359)] UncheckedAllocate
+[0620/103112.895:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0621/200231.484:ERROR:process_info.cc(359)] UncheckedAllocate
