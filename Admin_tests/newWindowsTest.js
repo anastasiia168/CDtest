@@ -34,8 +34,17 @@ describe ("Admin menu sections",  () =>  {
        // var link = await driver.findElement(By.css('#content > a'));
 
     });
-
-
+    it ("new window",  async () =>   {
+    let mainWindow = await driver.getWindowHandle();
+    let oldWindows = await driver.getAllWindowHandles()
+    await link.click() // открывает новое окно
+    let newWindow = await driver.wait(thereIsWindowOtherThan(mainWindow), 10000)
+    await driver.switchTo().window(oldWindows)
+// ...
+    await driver.close()
+    await driver.switchTo().window(mainWindow)
+    await driver.quit()
+    });
 });
 //#content > form > table:nth-child(2) > tbody > tr:nth-child(2) > td > a > i
 //html/body/div/div/div/table/tbody/tr/td[3]/form/table[1]/tbody/tr[2]/td/a
