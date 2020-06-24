@@ -16,12 +16,10 @@ describe ("Zones Sort",  () => {
     });
 
     it("Login", async () => {
-
         await driver.findElement(By.name('username')).sendKeys('admin');
         await driver.findElement(By.name('password')).sendKeys('admin');
         await driver.findElement(By.name('login')).click();
         await driver.wait(until.elementLocated(By.id("box-apps-menu-wrapper"), 10000));
-
     });
     it("Checking zones sort", async () => {
         await driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
@@ -29,12 +27,10 @@ describe ("Zones Sort",  () => {
         var countries = await driver.findElements(By.css('#content > form > table > tbody > tr> td:nth-child(3) > a'));
         console.log('countries.length=' + countries.length);
         for (var i = 0; i < countries.length; i++) {
-            console.log('2');
             var css = "#content > form > table > tbody > tr:nth-child(" + (i+2) + ") >td:nth-child(3)> a";
             await driver.wait(until.elementLocated(By.css(css)),1000);
             var country = await driver.findElement(By.css(css));
             await country.click();
-            console.log('3');
             var selects = await driver.findElements(By.css('#table-zones > tbody > tr > td:nth-child(3) > select'));
             var zones=[];
             var zonesForSort=[];
@@ -42,15 +38,11 @@ describe ("Zones Sort",  () => {
                 var selectedText = await item.findElement(By.css('[selected]'));
                 console.log(await selectedText.getText());
                 zones.push(await selectedText.getText());
-                zonesForSort.push(await selectedText.getText())  ;
+                zonesForSort.push(await selectedText.getText()) ;
             };
-           console.log(zones);
-
             var zonesSort = zonesForSort.sort();
-
             for (var j = 0; j < zones.length; j++) {
                 console.log( await zonesSort[j]);
-
                 sortzone = await zonesSort[j];
                 zone = await zones[j];
                 assert.ok(sortzone == zone, 'not equal zones');
@@ -58,15 +50,5 @@ describe ("Zones Sort",  () => {
             await driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
             console.log('end');
         }
-
     });
 });
-//var zonesForSort = zonesPage.slice();
-//var zonesSort = zonesForSort.sort();
-
-//for (var j = 0; j < zonesPage.length; j++) {
-  //  console.log( await zonesSort[j].getText());
-
- //   sortzone = await zonesSort[j].getText();
- //   zone = await zonesPage[j].getText();
- //   assert.ok(sortzone == zone, 'not equal zones');
