@@ -26,27 +26,22 @@ describe ("Admin menu sections",  () =>  {
         await driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
         var addcountry = await driver.findElement(By.css('#content > div > a'));
         await  addcountry.click();
-        await driver.wait(until.elementLocated(By.className("fa fa-external-link]")),1000);
+        await driver.getAllWindowHandles("http://localhost/litecart/admin/?app=countries&doc=edit_country");
 
-        var links = await driver.findElements(By.className("fa fa-external-link]"));
-        console.log(links.length); //link.click();
-
-       // var link = await driver.findElement(By.css('#content > a'));
-
-    });
-    it ("new window",  async () =>   {
-    let mainWindow = await driver.getWindowHandle();
-    let oldWindows = await driver.getAllWindowHandles()
-    await link.click() // открывает новое окно
-    let newWindow = await driver.wait(thereIsWindowOtherThan(mainWindow), 10000)
-    await driver.switchTo().window(oldWindows)
-// ...
-    await driver.close()
-    await driver.switchTo().window(mainWindow)
-    await driver.quit()
+        links=await driver.findElements(By.css('#content > form > table> tbody > tr > td > a > i'));
+        let mainWindow = await driver.getWindowHandle();
+        console.log(mainWindow);
+        let oldWindows = await driver.getAllWindowHandles();
+        console.log(oldWindows);
+        for (var item of links) {
+            await item.click() // открывает новое окно
+            let oldWindows1 = await driver.getAllWindowHandles();
+            await driver.wait(until.elementLocated(By.css('h1'), 10000));
+            var liSub = await oldWindows1 [1];
+            await driver.switchTo().window(liSub);
+            await driver.close();
+            await driver.switchTo().window(mainWindow);
+        }
+        await driver.quit()
     });
 });
-//#content > form > table:nth-child(2) > tbody > tr:nth-child(2) > td > a > i
-//html/body/div/div/div/table/tbody/tr/td[3]/form/table[1]/tbody/tr[2]/td/a
-//*[@id="content"]/form/table[1]/tbody/tr[2]/td/a
-//#content > form > table:nth-child(2) > tbody > tr:nth-child(2) > td > a
