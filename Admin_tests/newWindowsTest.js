@@ -30,15 +30,13 @@ describe ("Admin menu sections",  () =>  {
 
         links=await driver.findElements(By.css('#content > form > table> tbody > tr > td > a > i'));
         let mainWindow = await driver.getWindowHandle();
-        console.log(mainWindow);
         let oldWindows = await driver.getAllWindowHandles();
-        console.log(oldWindows);
         for (var item of links) {
             await item.click() // открывает новое окно
             let oldWindows1 = await driver.getAllWindowHandles();
+            var secondWindow = await oldWindows1 [1];
+            await driver.switchTo().window(secondWindow);
             await driver.wait(until.elementLocated(By.css('h1'), 10000));
-            var liSub = await oldWindows1 [1];
-            await driver.switchTo().window(liSub);
             await driver.close();
             await driver.switchTo().window(mainWindow);
         }
