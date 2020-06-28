@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6390b50f-5cd8-4540-8694-fb42b504ce53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Admin_tests/Log.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Litecart_tests/checkItemTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/Litecart_tests/checkItemTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.10.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Litecart_tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Admin_tests" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -62,29 +63,14 @@
       <recent name="C:\Users\admin\Documents\aututests\test-repository-ST\Admin" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\Documents\aututests\test-repository-ST\Litecart_tests" />
       <recent name="C:\Users\admin\Documents\aututests\test-repository-ST\Admin_tests" />
+      <recent name="C:\Users\admin\Documents\aututests\test-repository-ST\Litecart_tests" />
       <recent name="C:\Users\admin\Documents\aututests\test-repository-ST\utils" />
       <recent name="C:\Users\admin\Documents\aututests\test-repository-ST" />
       <recent name="C:\Users\admin\WebstormProjects\untitled1" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.Litecart_tests\checkItemTest.js">
-    <configuration name=" Open the cart Checkout" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/Litecart_tests/Cart_test.js</test-file>
-      <test-names>
-        <name value=" Open the cart Checkout" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Mocha.Admin_tests\Log.js">
     <configuration name="Add New Product" type="mocha-javascript-test-runner" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -98,6 +84,18 @@
       <test-names>
         <name value="Add New Product" />
       </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Admin_tests\Log.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--timeout 90000</extra-mocha-options>
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/Admin_tests/Log.js</test-file>
       <method v="2" />
     </configuration>
     <configuration name="Admin_tests\newWindowsTest.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
@@ -179,16 +177,16 @@
       <item itemvalue="Mocha.Litecart_tests\stickers_shop_test.js" />
       <item itemvalue="Mocha.Admin_tests\newWindowsTest.js" />
       <item itemvalue="Mocha.Litecart_tests\Cart_test.js" />
-      <item itemvalue="Mocha. Open the cart Checkout" />
       <item itemvalue="Mocha.Litecart_tests\checkItemTest.js" />
+      <item itemvalue="Mocha.Admin_tests\Log.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.Admin_tests\Log.js" />
         <item itemvalue="Mocha.Litecart_tests\checkItemTest.js" />
         <item itemvalue="Mocha.Admin_tests\newWindowsTest.js" />
         <item itemvalue="Mocha.Litecart_tests\Cart_test.js" />
         <item itemvalue="Mocha.Litecart_tests\stickers_shop_test.js" />
-        <item itemvalue="Mocha. Open the cart Checkout" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +227,7 @@
       <workItem from="1592769459393" duration="15309000" />
       <workItem from="1592851614392" duration="52795000" />
       <workItem from="1593197699435" duration="17524000" />
-      <workItem from="1593288278161" duration="8523000" />
+      <workItem from="1593288278161" duration="22556000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1591222913041</created>
@@ -378,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593216394251</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="checkItemTest.js">
+      <created>1593307317552</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1593307317552</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +409,8 @@
     <MESSAGE value="Zadanie 9 countrysSort.js zonesSort.js" />
     <MESSAGE value="Zadanie 11" />
     <MESSAGE value="Stickers, Carttest,zonesSort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stickers, Carttest,zonesSort" />
+    <MESSAGE value="checkItemTest.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkItemTest.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1365" y="218" key="#Inspections" timestamp="1592314395554">
@@ -416,10 +422,10 @@
     </state>
     <state x="-1319" y="210" key="#admin.js/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1591662217715" />
     <state x="601" y="210" key="#admin.js/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591746572251" />
-    <state x="-1150" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592823482943">
+    <state x="-1150" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593363815590">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1150" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592823482943" />
+    <state x="-1150" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593363815590" />
     <state x="526" y="269" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591749729073" />
     <state x="-1828" y="92" width="1674" height="896" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1593306833039">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -438,10 +444,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1319" y="210" key="#stickers_shop_test.js/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592252638524" />
-    <state x="-1244" y="74" key="CommitChangelistDialog2" timestamp="1593216393530">
+    <state x="-1244" y="74" key="CommitChangelistDialog2" timestamp="1593307316438">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1244" y="74" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593216393530" />
+    <state x="-1244" y="74" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593307316438" />
     <state x="676" y="74" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591742077259" />
     <state x="-737" y="301" key="EnvironmentVariablesDialog" timestamp="1591657678934">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -452,28 +458,28 @@
     </state>
     <state x="-1078" y="263" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592252697794" />
     <state x="842" y="263" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590627835938" />
-    <state width="1607" height="374" key="GridCell.Tab.0.bottom" timestamp="1593307140477">
+    <state width="1606" height="374" key="GridCell.Tab.0.bottom" timestamp="1593373113203">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1607" height="374" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593307140477" />
+    <state width="1606" height="374" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593373113203" />
     <state width="1899" height="250" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591753828810" />
     <state width="1355" height="346" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1607" height="374" key="GridCell.Tab.0.center" timestamp="1593307140477">
+    <state width="1606" height="374" key="GridCell.Tab.0.center" timestamp="1593373113203">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1607" height="374" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593307140477" />
+    <state width="1606" height="374" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593373113203" />
     <state width="1899" height="250" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591753828810" />
     <state width="1355" height="346" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1607" height="374" key="GridCell.Tab.0.left" timestamp="1593307140477">
+    <state width="1606" height="374" key="GridCell.Tab.0.left" timestamp="1593373113203">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1607" height="374" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593307140477" />
+    <state width="1606" height="374" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593373113203" />
     <state width="1899" height="250" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591753828810" />
     <state width="1355" height="346" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state width="1607" height="374" key="GridCell.Tab.0.right" timestamp="1593307140477">
+    <state width="1606" height="374" key="GridCell.Tab.0.right" timestamp="1593373113203">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1607" height="374" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593307140477" />
+    <state width="1606" height="374" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593373113203" />
     <state width="1899" height="250" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591753828810" />
     <state width="1355" height="346" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
     <state width="1304" height="321" key="GridCell.Tab.1.bottom" timestamp="1592742291727">
@@ -548,10 +554,10 @@
     <state width="1304" height="321" key="GridCell.Tab.3.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1592742291727" />
     <state width="968" height="325" key="GridCell.Tab.3.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591652432393" />
     <state width="1355" height="346" key="GridCell.Tab.3.right/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1591450140376" />
-    <state x="-1399" y="272" key="Vcs.Push.Dialog.v2" timestamp="1593216412198">
+    <state x="-1399" y="272" key="Vcs.Push.Dialog.v2" timestamp="1593307324999">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1399" y="272" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593216412198" />
+    <state x="-1399" y="272" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1593307324999" />
     <state x="-1060" y="419" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593036899876">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -581,11 +587,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Admin_tests/zonesSort.js</url>
-          <line>42</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Admin_tests/newWindowsTest.js</url>
           <line>30</line>

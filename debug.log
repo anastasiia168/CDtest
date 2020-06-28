@@ -19,3 +19,7 @@
 [0620/103112.895:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
 [0621/200231.484:ERROR:process_info.cc(359)] UncheckedAllocate
 [0624/113532.405:ERROR:process_info.cc(359)] UncheckedAllocate
+[0628/201912.584:ERROR:process_info.cc(359)] UncheckedAllocate
+[0628/201912.973:ERROR:process_info.cc(359)] UncheckedAllocate
+[0628/220542.008:ERROR:process_info.cc(359)] UncheckedAllocate
+[0628/222342.480:ERROR:process_info.cc(359)] UncheckedAllocate
