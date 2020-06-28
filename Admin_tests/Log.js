@@ -5,7 +5,7 @@ global.driver=BrowserFactory.create (browserName);
 const {By, until} = require ("selenium-webdriver");
 const emailRegistrationTest= "avstest15@mail.ru";
 const passwordRegistrationTest= "1111";
-Keys = driver.Key,
+Keys = driver.Key;
 driver.manage().setTimeouts( { implicit: 3000 } );
 driver.get("http://localhost/litecart/admin/");
 
@@ -30,7 +30,6 @@ describe ("Add New Product",  () =>  {
 
        });
           it ("Go to Products", async () => {
-           console.log('start');
            var products = await driver.findElements(By.css('#content > form > table > tbody > tr> td:nth-child(3) > a'));
            console.log('products.length=' + products.length);
            for (var i = 0; i < products.length; i++) {
@@ -42,9 +41,8 @@ describe ("Add New Product",  () =>  {
                await  driver.manage().logs().get("browser").then(async function(logsEntries) {
                    console.log(logsEntries.length);
                    logsEntries.forEach(async function(l) {
-                       console.log("1"+l);
+                       console.log(l);
                    });
-                   console.log('log');
                });
                await driver.get("http://localhost/litecart/admin/?app=catalog&doc=catalog&category_id=1");
            };
