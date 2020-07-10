@@ -1,0 +1,16 @@
+
+
+var Browser =require("../utils/browserFactory"),
+const {Key} = require("selenium-webdriver"),
+global.browserName= "chrome",
+global.driver=BrowserFactory.create (browserName),
+global.assert= require("assert"),
+const {By, until: {elementIsEnabled, elementIsVisible, elementLocated, stalenessOf}} = require ("selenium-webdriver");
+Keys = driver.Key,
+driver.get("https://litecart.stqa.ru/en/"),
+driver.manage().setTimeouts( { implicit: 2000 } )
+
+it (" Open the cart Checkout", async () => {
+await driver.findElement(By.css('#cart > a.link')).click();
+await driver.wait(elementLocated(By.name( 'remove_cart_item')),2000);
+});

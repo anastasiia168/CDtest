@@ -1,3 +1,4 @@
+
 const BrowserFactory= require("../utils/browserFactory")
 const {Key} = require("selenium-webdriver");
 global.browserName= "chrome";
@@ -5,7 +6,7 @@ global.driver=BrowserFactory.create (browserName);
 global.assert= require("assert");
 const {By, until: {elementIsEnabled, elementIsVisible, elementLocated, stalenessOf}} = require ("selenium-webdriver");
 Keys = driver.Key,
-driver.get("https://litecart.stqa.ru/en/");
+    driver.get("https://litecart.stqa.ru/en/");
 driver.manage().setTimeouts( { implicit: 2000 } );
 
 
@@ -31,32 +32,32 @@ it ("Add products to cart", async () => {
 });
 
 it (" Open the cart Checkout", async () => {
-   await driver.findElement(By.css('#cart > a.link')).click();
-   await driver.wait(elementLocated(By.name( 'remove_cart_item')),2000);
+    await driver.findElement(By.css('#cart > a.link')).click();
+    await driver.wait(elementLocated(By.name( 'remove_cart_item')),2000);
 });
 it (" Delete all products", async () => {
     var products = await driver.findElements(By.css(".dataTable.rounded-corners tr > td.item"));
     var pictures= await driver.findElements(By.css('#box-checkout-cart > ul > li'));
     await console.log("picture = " + pictures.length);
-                if (pictures.length > 0) {
-                    await driver.sleep(500);
-                    await driver.findElement(By.css('#box-checkout-cart > ul > li:nth-child(1) > a')).click();
-                 }
-                for (var item of products){
-                   var removeButtons = await driver.findElements(By.name('remove_cart_item'));
-                     await console.log("deleted buttons = " + removeButtons.length);
-                      if (removeButtons.length >= 0) {
-                          await driver.wait(function () {
-                              return elementIsVisible(removeButtons[0]);
-                          }, 3000)
-                              .then(async function () {
-                                  await removeButtons[0].click();
-                                  await driver.sleep(100);
-                                  await driver.wait(stalenessOf(item), 6000);
-                              });
-
-                      }
+    if (pictures.length > 0) {
+        await driver.sleep(500);
+        await driver.findElement(By.css('#box-checkout-cart > ul > li:nth-child(1) > a')).click();
     }
-   await driver.wait(elementLocated(By.css('#checkout-cart-wrapper > p:nth-child(2) > a')), 2000);
-   await driver.findElement(By.css('#checkout-cart-wrapper > p:nth-child(2) > a')).click();
+    for (var item of products){
+        var removeButtons = await driver.findElements(By.name('remove_cart_item'));
+        await console.log("deleted buttons = " + removeButtons.length);
+        if (removeButtons.length >= 0) {
+            await driver.wait(function () {
+                return elementIsVisible(removeButtons[0]);
+            }, 3000)
+                .then(async function () {
+                    await removeButtons[0].click();
+                    await driver.sleep(100);
+                    await driver.wait(stalenessOf(item), 6000);
+                });
+
+        }
+    }
+    await driver.wait(elementLocated(By.css('#checkout-cart-wrapper > p:nth-child(2) > a')), 2000);
+    await driver.findElement(By.css('#checkout-cart-wrapper > p:nth-child(2) > a')).click();
 });

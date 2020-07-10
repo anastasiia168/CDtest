@@ -6,6 +6,7 @@ const BrowserFactory = {
     if (browser == "ie" || browser == "internet explorer") {
       let capabilities = Capabilities.ie();
       capabilities.set("ignoreProtectedModeSettings", true);
+      capabilities.set("unexpectedAlertBehavior","dismiss");
       capabilities.set("ignoreZoomSetting", true);
       capabilities.set("nativeEvents", false);
       //capabilities.set("ensureCleanSession", true);
@@ -22,6 +23,9 @@ const BrowserFactory = {
           .build();
     }
     if (browser == "Chrome" || browser == "chrome") {
+      let capabilities = Capabilities.chrome();
+
+      capabilities.set("unexpectedAlertBehavior","dismiss");
 
      // var options = new chrome.Options();
    //   options.addArguments(["start-maximized"]);
